@@ -33,6 +33,7 @@ jobs:
 
     steps:
     - name: SSH and deploy node app
+      uses: actions/checkout@v1
       
       with:
         host: ${{ secrets.SSH_HOST }}
